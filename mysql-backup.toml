@@ -1,0 +1,16 @@
+[template]
+src = "mysql-backup.conf.tmpl"
+dest = "/etc/backup/mysql-backup.conf"
+keys = [
+    "/backup/retention",
+    "/check/mountpoint",
+    "/compress",
+    "/influxdb/database",
+    "/influxdb/measurement",
+    "/influxdb/url",
+    "/long/term/backups",
+    "/mysql/user",
+    "/mysql/passwd",
+    "/mysql/host",
+    "/zabbix/server",
+]
