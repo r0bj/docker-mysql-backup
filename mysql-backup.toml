@@ -13,4 +13,5 @@ keys = [
     "/mysql/passwd",
     "/mysql/host",
     "/zabbix/server",
+    "/initial/sleep",
 ]

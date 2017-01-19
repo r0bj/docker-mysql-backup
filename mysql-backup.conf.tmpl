@@ -9,3 +9,4 @@
 {{ if exists "/mysql/passwd" }}mysql_passwd = {{ getv "/mysql/passwd" }}{{ end }}
 {{ if exists "/mysql/host" }}mysql_host = {{ getv "/mysql/host" }}{{ end }}
 {{ if exists "/zabbix/server" }}zabbix_server = {{ getv "/zabbix/server" }}{{ end }}
+{{ if exists "/initial/sleep" }}initial_sleep = {{ getv "/initial/sleep" }}{{ end }}
