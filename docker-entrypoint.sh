@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ -n "$TZ" ] && [ -e /usr/share/zoneinfo/$TZ ]; then
+	ln -fs /usr/share/zoneinfo/$TZ /etc/localtime
+	dpkg-reconfigure -f noninteractive tzdata
+fi
+
 confd -onetime -backend env
 
 exec /mysql-backup.pl
