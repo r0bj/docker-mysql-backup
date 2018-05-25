@@ -2,7 +2,7 @@
 src = "mysql-backup.conf.tmpl"
 dest = "/etc/backup/mysql-backup.conf"
 keys = [
-    "logfile",
+    "/logfile",
     "/backup/retention",
     "/check/mountpoint",
     "/compress",
