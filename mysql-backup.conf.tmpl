@@ -1,3 +1,4 @@
+{{ if exists "/logfile" }}logfile = {{ getv "/logfile" }}{{ end }}
 {{ if exists "/backup/retention" }}backup_retention = {{ getv "/backup/retention" }}{{ end }}
 {{ if exists "/check/mountpoint" }}check_mountpoint = {{ getv "/check/mountpoint" }}{{ end }}
 {{ if exists "/compress" }}compress = {{ getv "/compress" }}{{ end }}
@@ -10,3 +11,4 @@
 {{ if exists "/mysql/host" }}mysql_host = {{ getv "/mysql/host" }}{{ end }}
 {{ if exists "/zabbix/server" }}zabbix_server = {{ getv "/zabbix/server" }}{{ end }}
 {{ if exists "/initial/sleep" }}initial_sleep = {{ getv "/initial/sleep" }}{{ end }}
+{{ if exists "/notify/zabbix" }}notify_zabbix = {{ getv "/notify/zabbix" }}{{ end }}

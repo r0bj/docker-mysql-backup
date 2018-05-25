@@ -9,7 +9,7 @@ RUN echo "deb http://repo.percona.com/apt xenial main" > /etc/apt/sources.list.d
 
 RUN wget -qO /mysql-backup.pl --no-check-certificate https://raw.githubusercontent.com/r0bj/mysql-backup/master/mysql-backup.pl && chmod +x /mysql-backup.pl
 
-RUN wget -qO /usr/bin/confd --no-check-certificate https://github.com/kelseyhightower/confd/releases/download/v0.12.0-alpha3/confd-0.12.0-alpha3-linux-amd64 && chmod +x /usr/bin/confd
+RUN wget -qO /usr/bin/confd --no-check-certificate https://github.com/kelseyhightower/confd/releases/download/v0.16.0/confd-0.16.0-linux-amd64 && chmod +x /usr/bin/confd
 COPY mysql-backup.toml /etc/confd/conf.d/mysql-backup.toml
 COPY mysql-backup.conf.tmpl /etc/confd/templates/mysql-backup.conf.tmpl
 RUN mkdir /etc/backup

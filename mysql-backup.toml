@@ -2,6 +2,7 @@
 src = "mysql-backup.conf.tmpl"
 dest = "/etc/backup/mysql-backup.conf"
 keys = [
+    "logfile",
     "/backup/retention",
     "/check/mountpoint",
     "/compress",
@@ -14,4 +15,5 @@ keys = [
     "/mysql/host",
     "/zabbix/server",
     "/initial/sleep",
+    "/notify/zabbix",
 ]
