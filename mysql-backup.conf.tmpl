@@ -5,6 +5,7 @@
 {{ if exists "/influxdb/database" }}influxdb_database = {{ getv "/influxdb/database" }}{{ end }}
 {{ if exists "/influxdb/measurement" }}influxdb_measurement = {{ getv "/influxdb/measurement" }}{{ end }}
 {{ if exists "/influxdb/url" }}influxdb_url = {{ getv "/influxdb/url" }}{{ end }}
+{{ if exists "/pushgateway/url" }}pushgateway_url = {{ getv "/pushgateway/url" }}{{ end }}
 {{ if exists "/long/term/backups" }}long_term_backups = {{ getv "/long/term/backups" }}{{ end }}
 {{ if exists "/mysql/user" }}mysql_user = {{ getv "/mysql/user" }}{{ end }}
 {{ if exists "/mysql/passwd" }}mysql_passwd = {{ getv "/mysql/passwd" }}{{ end }}

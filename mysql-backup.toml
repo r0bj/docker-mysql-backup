@@ -9,6 +9,7 @@ keys = [
     "/influxdb/database",
     "/influxdb/measurement",
     "/influxdb/url",
+    "/pushgateway/url",
     "/long/term/backups",
     "/mysql/user",
     "/mysql/passwd",
