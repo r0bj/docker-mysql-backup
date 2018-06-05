@@ -6,5 +6,3 @@ if [ -n "$TZ" ] && [ -e /usr/share/zoneinfo/$TZ ]; then
 fi
 
 confd -onetime -backend env
-
-exec /mysql-backup.pl

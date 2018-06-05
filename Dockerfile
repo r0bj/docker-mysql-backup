@@ -24,4 +24,6 @@ RUN wget -qO /tmp/${ZABBIX_AGENT}.tar.gz http://www.zabbix.com/downloads/${ZABBI
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 RUN chmod +x /docker-entrypoint.sh
-CMD ["/docker-entrypoint.sh"]
+
+ENTRYPOINT ["/docker-entrypoint.sh"]
+CMD ["/mysql-backup.pl"]
